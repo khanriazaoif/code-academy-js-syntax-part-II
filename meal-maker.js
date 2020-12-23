@@ -29,5 +29,7 @@ const menu = {
             desserts: this.desserts,
         };
     }
-
+addDishToCourse(courseName, dishName, dishPrice){
+    
+}
 };
