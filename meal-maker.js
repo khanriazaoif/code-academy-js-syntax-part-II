@@ -3,7 +3,9 @@ const menu = {
         appetizers: [],
         mains: [],
         desserts: [],
-        
+        get courses(){
+            return this._courses;
+        }
     },
     get appetizers(){
         return this._courses;
