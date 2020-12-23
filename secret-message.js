@@ -8,3 +8,5 @@ console.log(secretMessage);
 console.log(secretMessage.indexOf('easily'));
 console.log(secretMessage.splice(7,1,'right'));
 console.log(secretMessage);
+console.log(secretMessage.shift())
+console.log(secretMessage);
