@@ -1,3 +1,3 @@
 const menu = {
-
+    _courses:{}
 };
