@@ -1,4 +1,4 @@
-let input = 'turpentine and turtles.';
+let input = `Riaz is awesome, he is just the coolest.`;
 
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 
@@ -16,13 +16,14 @@ for (let i = 0; i < input.length; i++) {
         // console.log(vowelsIndex);
         if(inputIndex === vowelsIndex){
             resultArray.push(vowelsIndex);
-            console.log(inputIndex);
+            // console.log(inputIndex);
             if(inputIndex === 'e' || inputIndex === 'u'){
                 resultArray.push(inputIndex);
-                console.log(resultArray);
+                // console.log(resultArray);
             }
         }
         // resultArray.push(vowelsIndex);
     }
 }
 
+console.log(resultArray.join('').toUpperCase());
