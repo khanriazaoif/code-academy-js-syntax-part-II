@@ -3,31 +3,31 @@ const menu = {
         appetizers: [],
         mains: [],
         desserts: [],
-        get courses(){
-            return {
-                appetizers: this.appetizers,
-                mains: this.mains,
-                desserts: this.desserts,
-            }
-        }
     },
     get appetizers(){
-        return this._courses;
-    },
-    set appetizers(appetizerIn){
-        return this._courses;
+        return this._courses.appetizers;
     },
     get mains(){
-        return this._courses;
-    },
-    set mains(mainIn){
-        return this._courses
+        return this._courses.mains;
     },
     get desserts(){
-        return this._courses;
+        return this._courses.desserts;
     },
-    set desserts(dessertIn){
-        return this._courses
+    set appetizers(appetizers){
+        return this._courses.appetizers = appetizers;
     },
+    set mains(mains){
+        return this._courses.mains = mains;
+    },
+    set desserts(desserts){
+        return this._courses.desserts = desserts;
+    },
+    get courses(){
+        return {
+            appetizers: this.appetizers,
+            mains: this.mains,
+            desserts: this.desserts,
+        };
+    }
 
 };
