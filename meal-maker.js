@@ -4,7 +4,11 @@ const menu = {
         mains: [],
         desserts: [],
         get courses(){
-            return this._courses;
+            return {
+                appetizers: this.appetizers,
+                mains: this.mains,
+                desserts: this.desserts,
+            }
         }
     },
     get appetizers(){
