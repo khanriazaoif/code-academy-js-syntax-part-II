@@ -1,1 +1,0 @@
-# code-academy-js-syntax-part-II
