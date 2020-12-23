@@ -4,4 +4,4 @@ const menu = {
         mains: [],
         desserts: [],
     }
-}; 
+};
