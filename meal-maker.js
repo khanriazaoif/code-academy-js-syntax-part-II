@@ -1,3 +1,7 @@
 const menu = {
-    _courses:{}
+    _courses:{
+        appetizers: [],
+        mains: [],
+        desserts: [],
+    }
 };
