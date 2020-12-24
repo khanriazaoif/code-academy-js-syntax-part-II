@@ -30,6 +30,10 @@ const menu = {
         };
     }
 addDishToCourse(courseName, dishName, dishPrice){
-    
+    const dish = {
+        dishName;
+        dishPrice;
+    };
+    this._courses[courseName].push(dish)
 }
 };
