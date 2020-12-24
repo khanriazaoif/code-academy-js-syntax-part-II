@@ -27,13 +27,19 @@ const menu = {
             appetizers: this.appetizers,
             mains: this.mains,
             desserts: this.desserts,
-        };
+        }
+   
+    },
+    addDishToCourse(courseName, dishName, dishPrice){
+        const dish = {
+            dishName,
+            dishPrice,
+        }
+        this._courses[courseName].push(dish)    
+    },
+
+    getRandomDishFromCourse(courseName){
+        
     }
-addDishToCourse(courseName, dishName, dishPrice){
-    const dish = {
-        dishName;
-        dishPrice;
-    };
-    this._courses[courseName].push(dish)
-}
 };
+
