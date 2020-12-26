@@ -1,5 +1,5 @@
 const team = {
-    _players = [
+    _players: [
         {
             firstName: 'Riaz',
             lastName: 'Khan',
@@ -19,7 +19,7 @@ const team = {
     get players() {
         return this._games;
     },
-    _games = [
+    _games: [
         {
             opponent: 'Cowboys',
             teamPoints: 42,
@@ -40,11 +40,21 @@ const team = {
         return this._games;
     },
     addPlayer(firstName, lastName, age){
+        // debugger;
         let player = {
             firstName: firstName,
             lastName: lastName,
             age: age
         };
-        this.players.push(player);
+        this._players.push(player);
     }
+
+
 };
+
+team.addPlayer('Steph', 'Curry', 28);
+team.addPlayer('Lisa', 'Leslie', 44);
+team.addPlayer('Bugs', 'Bunny', 76);
+
+
+console.log(team._players);
