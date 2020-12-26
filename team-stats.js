@@ -16,6 +16,9 @@ const team = {
             age: 7
           }
     ]
+    get players() {
+        return this._games;
+    }
     _games = [
         {
             opponent: 'Cowboys',
@@ -33,5 +36,7 @@ const team = {
             opponentPoints: 56
           }
     ]
-
+    get games() {
+        return this._games;
+    }
 };
