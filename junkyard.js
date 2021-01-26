@@ -1,10 +1,12 @@
-const numbers = [2, 7, 9, 171, 52, 33, 14];
-
-const toSquare = (num) => num * num;
-
-// Write your code here:
-const number = squareNums(numbers){
-  return num;
-}
-
-console.timeLog(num);
+const _ = {
+  clamp(number, lower, upper){
+      let lowerClampedValue =
+      Math.max(number, lower);
+      let clampedValue = Math.min(lowerClampedValue, upper);
+      // console.log(clampedValue);
+      return clampedValue;
+  }
+};
+console.log(_.clamp(16, 5, 10));
+console.log(_.clamp(6, 5, 10));
+console.log(_.clamp(-16, 5, 10));
